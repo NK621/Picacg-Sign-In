@@ -3,6 +3,7 @@ name: 哔咔自动签到
 on:
   schedule:
     - cron: '0 6 * * *' # 定时任务，修改为你需要的时间
+  workflow_dispatch: # 添加这个事件支持手动触发
 
 jobs:
   sign_in:

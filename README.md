@@ -2,7 +2,7 @@
 
 # **哔咔自动签到脚本**
 
-本项目是一个用于哔咔漫画平台的自动签到脚本。它支持多账号签到、随机设备 ID 生成、邮件通知，并优化为可在 GitHub Actions 中运行。
+本项目用于哔咔漫画平台的自动签到脚本。支持多账号签到、随机设备 ID 生成、邮件通知，可在 GitHub Actions 中运行。
 
 ---
 
@@ -40,7 +40,7 @@ cd pica-sign-in
   ```
   例如：
   ```
-  user1@example.com:password1,user2@example.com:password2
+  user1:password1,user2:password2
   ```
 
 - **`EMAIL_CONFIG`**：邮件配置，JSON 格式，示例如下：
@@ -80,6 +80,7 @@ name: 哔咔自动签到
 on:
   schedule:
     - cron: '0 6 * * *' # 定时任务，修改为你需要的时间
+  workflow_dispatch: # 添加这个事件支持手动触发
 
 jobs:
   sign_in:

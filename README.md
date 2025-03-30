@@ -19,7 +19,7 @@
 
 ### **1. 克隆项目**
 ```bash
-git clone https://github.com/your-username/pica-sign-in.git
+git clone https://github.com/ilhmtfmlt2/pica-sign-in.git
 cd pica-sign-in
 ```
 

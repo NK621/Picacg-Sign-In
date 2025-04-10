@@ -2,7 +2,7 @@ name: 哔咔自动签到
 
 on:
   schedule:
-    - cron: '0 6 * * *' # 定时任务，修改为你需要的时间
+    - cron: '0 10 * * *' # 定时任务，修改为你需要的时间
   workflow_dispatch: # 添加这个事件支持手动触发
 
 jobs:
@@ -25,3 +25,4 @@ jobs:
           ACCOUNT_LIST: ${{ secrets.ACCOUNT_LIST }}
           EMAIL_CONFIG: ${{ secrets.EMAIL_CONFIG }}
         run: python script.py
+         
